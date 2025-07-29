@@ -91,7 +91,7 @@ namespace SqlBuildManager.Console.CommandLine
                      {
                         args.AddRange(new string[] { "--authtype", "Password".Quoted() });
                         
-                        // Pass username and password parameters when using Password authentication
+                        // Honor passed username and password parameters when using Password authentication
                         if (!string.IsNullOrWhiteSpace(cmd.AuthenticationArgs.UserName))
                         {
                            args.AddRange(new string[] { "--username", cmd.AuthenticationArgs.UserName.Quoted() });
